@@ -28,7 +28,7 @@ Fonts are separated by a & */
   --nav-hover-background-color: #396E94;
 }
 
-
+url(../../images) url(../../styles) url(..) url(../../index.html)
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
