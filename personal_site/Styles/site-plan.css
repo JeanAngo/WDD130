@@ -4,7 +4,8 @@ Fonts are separated by a | */
 
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Open+Sans');
+
 
 /* Root Variables */
 :root {
@@ -13,10 +14,12 @@ Fonts are separated by a | */
   --secondary-color: #E7C24F;
   --accent1-color: #A42212;
   --accent2-color: white;
+  
 
-  /* Fonts */
-  --heading-font: "IM Fell French Canon SC";
-  --paragraph-font: "Lato", Helvetica, sans-serif;
+  --heading-font: "Playfair Display", serif;
+  --paragraph-font: "Open Sans", Arial, sans-serif;
+
+  
 
   /* Color Scheme for Text and Backgrounds */
   --headline-color-on-white: #396E94;  /* Headlines on white */
