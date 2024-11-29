@@ -1,114 +1,115 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Open+Sans');
 
-/* Root Variables */
-:root {
-  --primary-color: #396E94;
-  --secondary-color: #E7C24F;
-  --accent1-color: #A42212;
-  --accent2-color: #FFFFFF;
-
-  --heading-font: "Playfair Display", serif;
-  --paragraph-font: "Open Sans", Arial, sans-serif;
-
-  --headline-color-on-white: #396E94;
-  --paragraph-color-on-white: #396E94;
-  --paragraph-background-color: #396E94;
-  --nav-link-color: #396E94;
-  --nav-background-color: #E7C24F;
-  --nav-hover-link-color: #FFFFFF;
-  --nav-hover-background-color: #396E94;
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* General Styles */
+/* Body styling */
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-h1, h2, h3, h4 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-
-hr {
-  height: 3px;
-  background-color: var(--accent1-color);
-}
-
+/* Header and navigation */
 header {
-  text-align: center;
-  color: white;
-  background-color: var(--primary-color);
+    background-color: #396E94;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
 }
 
-/* Colors Table */
-.colors {
-  width: 100%;
-  margin: 30px auto;
-}
-
-.colors td {
-  height: 3em;
-}
-
-.primary {
-  background-color: var(--primary-color);
-}
-
-.secondary {
-  background-color: var(--secondary-color);
-}
-
-.accent1 {
-  background-color: var(--accent1-color);
-}
-
-.accent2 {
-  background-color: var(--accent2-color);
-}
-
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: white;
-}
-
-/* Navigation */
 nav {
-  background-color: var(--nav-background-color);
+    margin: 15px 0;
 }
 
 nav a {
-  padding: 10px;
-  text-decoration: none;
-  color: var(--nav-link-color);
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+    text-decoration: underline;
 }
 
-/* Sitemap */
-.sitemap {
-  display: grid;
-  grid-template-columns: repeat(6, 15%);
+/* Main content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.sitemap > div {
-  background-color: #ccc;
-  line-height: 3em;
+section {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #396E94;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #E7C24F;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+footer a {
+    color: #A42212;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 10px;
+    }
 }
