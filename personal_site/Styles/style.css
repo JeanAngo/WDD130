@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Open+Sans');
+
 /* General reset */
 * {
     margin: 0;
@@ -8,61 +11,79 @@
 /* Body styling */
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f9f9f9;
     color: #333;
-    background-color: #f8f9fa;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header and Navigation */
+/* Header */
 header {
     background-color: #396E94;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px 10px;
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
+header h2 {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Navigation */
 nav {
-    margin: 10px 0;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #E7C24F;
+    color: #333;
 }
 
 /* Main content */
 main {
-    padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin: 20px 0;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
     color: #396E94;
     margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #E7C24F;
+    margin-bottom: 8px;
 }
 
 p {
     margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 /* Images */
@@ -70,21 +91,21 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 10px auto;
+    margin: 15px auto;
     border-radius: 8px;
 }
 
 /* Footer */
 footer {
-    background-color: #E7C24F;
+    background-color: #396E94;
+    color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
-    color: #333;
+    padding: 10px;
+    font-size: 0.8rem;
 }
 
 footer a {
-    color: #A42212;
+    color: #E7C24F;
     text-decoration: none;
 }
 
@@ -96,14 +117,14 @@ footer a:hover {
 @media (max-width: 768px) {
     nav a {
         display: block;
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     main {
-        padding: 10px;
+        padding: 15px;
     }
 }
