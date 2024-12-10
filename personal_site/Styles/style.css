@@ -149,8 +149,10 @@ footer a:hover {
 .section-with-image {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
     margin-bottom: 20px;
+    gap: 10px;
+    flex-direction: column;
 }
 
 .section-with-image img {
@@ -158,7 +160,43 @@ footer a:hover {
     max-width: 300px;  
 }
 
+.section-with-imagen p h2{
+position:relative;
+left: 50px;
+font-weight: bold;
+}
+
 .section-with-image p {
     width: 50%;  
     margin-right: 20px;
+}
+
+.welcome-section{
+    align-items: center;
+}
+
+
+.section-with-image1 {
+    display: flex;
+    align-items: stretch;
+    gap: 20px; 
+}
+
+.section-image {
+    width: 50%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.text-content {
+    width: 50%; 
+}
+
+.text-content h2 {
+    margin-top: 0; 
+    margin-bottom: 10px; 
+}
+
+.text-content p {
+    line-height: 1.6;
 }

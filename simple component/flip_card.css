@@ -3,11 +3,11 @@
     background-color: transparent;
     width: 300px;
     height: 300px;
-    perspective: 1000px; /* Perspective for 3D effect */
-    margin: 50px auto; /* Center the card */
+    perspective: 1000px; 
+    margin: 50px auto; 
 }
 
-/* Inner container for flipping */
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -17,22 +17,22 @@
     transform-style: preserve-3d;
 }
 
-/* On hover, flip the card */
+
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Front of the card */
+
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Hide back face when flipping */
-    border-radius: 10px; /* Smooth corners */
+    backface-visibility: hidden; 
+    border-radius: 10px; 
     overflow: hidden;
 }
 
-/* Front card styles */
+
 .flip-card-front {
     background-color: #f1f1f1;
     display: flex;
@@ -40,11 +40,11 @@
     align-items: center;
 }
 
-/* Back card styles */
+
 .flip-card-back {
     background-color: #4CAF50;
     color: white;
-    transform: rotateY(180deg); /* Flip the back side */
+    transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
